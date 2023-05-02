@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.block {
+    width: 500px;
+    margin: 50px auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.radio__img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+li {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio__img {
+    background-image: url(/img/radio.svg);
+    background-repeat: no-repeat;
+    background-size: 70px 24px;
+    background-position: 0 0;
+}
+
+.radio .radio__img,
+.radio:hover .radio__img {
+    background-position: -45px 0;
+}
+
+.radio .radio__text {
+    color: white;
+}
+
+li:hover .radio__img {
+    background-position: -23px 0;
+}
